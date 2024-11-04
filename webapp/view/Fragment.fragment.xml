@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns:cards="sap.f.cards" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="materialDialog" title="List of Materials">
+        <Panel>
+            <SearchField id="materialSearchField" placeholder="Search Materials" liveChange="onSearchMaterials" />
+
+            <List id="materialList" items="{/materials}" noDataText="No materials found">
+                <items>
+                    <StandardListItem 
+                        title="{materialName}" 
+                        description="{materialDescription}" 
+                        info="{matnr}" 
+                    />
+                </items>
+            </List>
+        </Panel>
+
+        <beginButton>
+            <Button text="Release to Manufacture" press="onReleaseToManufacture" />
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="fragment.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+    
+    <Page id="page" title="Materials">
+        <VBox class="sapUiSmallMargin">
+            <Button 
+                text="List of Materials"
+                press="onOpenFragment"/>
+        </VBox>
+    </Page>
+</mvc:View>
